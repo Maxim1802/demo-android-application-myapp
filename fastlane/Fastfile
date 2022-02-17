@@ -29,6 +29,9 @@ platform :android do
 			"android.injected.signing.store.password" => "maxim6",
 			"android.injected.signing.key.alias" => "signFiles",
 			"android.injected.signing.key.password" => "maxim6",
+			"applicationId": "com.anko.demoapp.beta",
+			"versionName": ENV["VERSION"],
+			"buildNumber": ENV["BUILD_NIMBER"]
 		}
 	)
 	appcenter_upload(
