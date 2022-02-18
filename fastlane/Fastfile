@@ -85,7 +85,7 @@ platform :android do
 		}
 	)
 	appcenter_upload(
-		api_token: "12c198675a55902633adb923b6ecac57c427aa9c",
+		api_token: "9a1a2e32e7f8443a480992e140ecc707cb729c8d",
 		owner_name: "moriarty18.02-gmail.com",
 		owner_type: "user", # Default is user - set to organization for appcenter organizations
 		app_name: "myapp_release",
