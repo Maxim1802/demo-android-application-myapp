@@ -19,9 +19,15 @@ pipeline {
     stage('fastlane') {
       steps {
         container('fastlane') {
-          sh 'fastlane ${LANE}'
+          sh 'fastlane ${LANE}'	   
+				   
         }
       }
     }
+  }
+  post {
+	always {
+		archiveArtifacts artifacts: 'app/build/outputs/apk/release/app-release.apk', onlyIfSuccessful: true
+	}
   }
 }
